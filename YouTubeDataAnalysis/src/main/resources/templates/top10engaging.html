@@ -1,0 +1,49 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Top 10 engaging videos</title>
+
+  <style>
+
+    tr,td,th{
+      border: 1px solid;
+    }
+    table{
+      border-collapse: collapse;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+<header class="fixed">
+  <nav class="navbar navbar-expand-lg topbar shadow mb-1 static-top d-flex bg-light"
+       style="font-family: 'Roboto', Times, serif; padding: 5px;">
+    <a href="/" class="mr-auto logo" style="padding-left: 20px;">
+      <h2 style="margin-bottom: -10px;">
+          Group 12_Top 10 engaging videos
+      </h2>
+    </a>
+  </nav>
+</header>
+
+<div id="container" class="container-fluid" style="width: 100%;">
+
+  <div id="canvas2"></div>
+
+  <br/>
+  <button id="stopDataset">Stop Processing</button>
+</div>
+<br/>
+
+<script type="text/javascript" th:src="@{/top10engaging.js}">
+
+</script>
+
+
+</body>
+
+</html>
